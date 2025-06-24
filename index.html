@@ -1,68 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ParrotVerse – Where Parrots Thrive Digitally</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #F2EFE6; color: #1F1F1F; margin: 0; padding: 0; }
-        header, section, footer { padding: 40px 20px; max-width: 800px; margin: auto; }
-        header { background: #32757F; color: #FFFFFF; text-align: center; }
-        header h1 { font-size: 2.5em; }
-        header p { font-size: 1.2em; }
-        .cta { background: #8ABF8A; padding: 10px 20px; display: inline-block; color: #fff; text-decoration: none; margin-top: 20px; border-radius: 5px; }
-        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .feature { background: #FFFFFF; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        footer { font-size: 0.9em; text-align: center; background: #FFFFFF; border-top: 1px solid #ccc; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ParrotVerse – The digital home for companion parrots. Tools, care and community for parrot owners and rescues."/>
+  <title>ParrotVerse</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="hero">
+    <h1>The Digital Home for Companion Parrots</h1>
+    <p>Tools, care and community for parrot owners and rescues</p>
+    <a href="#signup" class="cta-button">Get Early Access*</a>
+    <p class="fine-print">*Free for early users. No spam.</p>
+  </header>
 
-<header>
-    <h1>Where Parrots Thrive, Digitally</h1>
-    <p>A digital companion platform for responsible parrot care, rehoming, and ethical supply.</p>
-    <a class="cta" href="#signup">Join the Waitlist</a>
-</header>
-
-<section>
-    <h2>The Problem</h2>
-    <p>Parrot owners, rescues, and ethical sellers rely on fragmented tools and informal channels.</p>
-
-    <h2>Our Solution</h2>
-    <p>ParrotVerse brings care tracking, adoption support, and verified commerce together in one welfare-focused platform.</p>
-</section>
-
-<section class="features">
-    <div class="feature">
-        <h3>Owner Hub</h3>
-        <p>Care profiles, notes, reminders</p>
+  <section class="section about">
+    <h2>Designed for Every Part of Parrot Care</h2>
+    <p>ParrotVerse is a mobile-first platform that supports responsible parrot care and adoption. We offer practical tools for owners, digital CRM for rescues, and an ethical marketplace verified for welfare standards.</p>
+    <div class="icons">
+      <div>
+        <img src="assets/owners.png" alt="Parrot Owners"/>
+        <h3>Parrot Owners</h3>
+        <p>Routine tracking and care</p>
+      </div>
+      <div>
+        <img src="assets/rescues.png" alt="Rescues"/>
+        <h3>Rescues</h3>
+        <p>Organised adoption flow</p>
+      </div>
+      <div>
+        <img src="assets/sellers.png" alt="Ethical Sellers"/>
+        <h3>Ethical Sellers</h3>
+        <p>Verified ethical listings</p>
+      </div>
     </div>
-    <div class="feature">
-        <h3>Rescue Tools</h3>
-        <p>Rehoming dashboard, records</p>
-    </div>
-    <div class="feature">
-        <h3>Ethical Marketplace</h3>
-        <p>Verified listings only</p>
-    </div>
-    <div class="feature">
-        <h3>Welfare First</h3>
-        <p>Designed with real input from owners and rescues</p>
-    </div>
-</section>
+  </section>
 
-<section id="signup">
-    <h2>Join the Waitlist</h2>
-    <p>Be part of the future of parrot care.</p>
-    <a class="cta" href="mailto:hello@parrotverse.app">Join Now</a>
-</section>
+  <section class="section features">
+    <h2>What You Can Do</h2>
+    <div class="feature-grid">
+      <div><h3>Owner Hub</h3><p>Manage feeding, health and care routines</p></div>
+      <div><h3>Rescue Tools</h3><p>Organise adoption and intake records</p></div>
+      <div><h3>Marketplace</h3><p>Verified ethical sellers</p></div>
+      <div><h3>Built-In Compliance</h3><p>GDPR & DEFRA aligned</p></div>
+    </div>
+  </section>
 
-<footer>
-    ParrotVerse Limited | Ipswich, UK<br>
-    hello@parrotverse.app<br>
-    @parrotverse (Instagram, X, TikTok)<br>
-    GDPR compliant
-</footer>
+  <section class="section cta" id="signup">
+    <h2>Want Early Access?</h2>
+    <p>Join 250+ parrot lovers waiting for early access. Sign up to get updates, launch info, and early features.</p>
+    <form action="https://formspree.io/f/mayvlqvg" method="POST">
+      <input type="email" name="email" placeholder="Email" required />
+      <button type="submit">Sign Up</button>
+    </form>
+    <p class="fine-print">We respect your inbox and privacy</p>
+  </section>
 
+  <section class="section impact">
+    <h2>Where We're Going</h2>
+    <ul>
+      <li>✓ 15 rescues expected by launch</li>
+      <li>✓ 25% faster adoptions with rescue tools</li>
+      <li>✓ 2,000+ parrot profiles projected</li>
+      <li>✓ Building a long-term ethical pet care ecosystem</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <img src="assets/logo.png" alt="ParrotVerse logo"/>
+    <p>ParrotVerse</p>
+    <p><a href="mailto:hello@parrotverse.app">hello@parrotverse.app</a></p>
+    <p><a href="#">Privacy Policy</a></p>
+  </footer>
 </body>
 </html>

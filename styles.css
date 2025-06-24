@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2e2e2e;
+  background-color: #fafaf5;
+}
+header.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+.cta-button {
+  display: inline-block;
+  background: #7ebc89;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.fine-print {
+  font-size: 12px;
+  margin-top: 8px;
+}
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.icons, .feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+footer.footer {
+  background: #2e4a3a;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
