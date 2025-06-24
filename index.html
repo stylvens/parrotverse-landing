@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,118 +7,124 @@
   <meta name="description" content="ParrotVerse – The digital home for companion parrots."/>
   <title>ParrotVerse</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="assets/0.Logo/fav.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/logo/fav.svg" type="image/svg+xml" />
 </head>
 <body>
 
 <header class="hero">
-  <img src="assets/0.Logo/logo-black.svg" alt="ParrotVerse logo" class="logo-top-left" />
+  <img src="assets/logo/logo-black.svg" alt="ParrotVerse logo homepage" class="logo-top-left" />
   <div class="hero-background">
-    <img src="assets/1.Header/parrot-hero.png" alt="Parrot Background" class="hero-image" />
+    <img src="assets/header/parrot-hero.png" alt="A colourful parrot in background" class="hero-image" />
     <div class="hero-text">
       <h1>The Digital Home for Companion Parrots</h1>
       <p>Tools, care and community for parrot owners and rescues</p>
-      <a href="#signup" class="cta-button">Get Early Access*</a>
+      <a href="#signup" class="cta-button" aria-label="Join waitlist for early access">Get Early Access*</a>
       <p class="fine-print">*Free for early users. No spam.</p>
     </div>
   </div>
 </header>
 
-<section class="section about">
-  <h2>Designed for Every Part of Parrot Care</h2>
-  <div class="about-content">
-    <img src="assets/2.Designed Parrot Care/iphone-cut.svg" alt="Mobile Phone" class="iphone-asset" />
-    <div class="about-text">
-      <p>ParrotVerse is a mobile-first platform that supports responsible parrot care and adoption. We offer practical tools for owners, digital CRM for rescues, and an ethical marketplace verified for welfare standards.</p>
-      <div class="icons">
-        <div>
-          <img src="assets/2.Designed Parrot Care/icons-parrot-owners.png" alt="Parrot Owners"/>
-          <h3>Parrot Owners</h3>
-          <p>Routine tracking and care</p>
-        </div>
-        <div>
-          <img src="assets/2.Designed Parrot Care/icons-rescues.png" alt="Rescues"/>
-          <h3>Rescues</h3>
-          <p>Organised adoption flow</p>
-        </div>
-        <div>
-          <img src="assets/2.Designed Parrot Care/icons-ethical-sellers.png" alt="Ethical Sellers"/>
-          <h3>Ethical Sellers</h3>
-          <p>Verified ethical listings</p>
+<main>
+  <section class="section about">
+    <h2>Designed for Every Part of Parrot Care</h2>
+    <div class="about-content">
+      <img src="assets/about/iphone-cut.svg" alt="Mobile phone showing parrot care features" class="iphone-asset" />
+      <div class="about-text">
+        <p>ParrotVerse is a mobile-first platform that supports responsible parrot care and adoption. We offer practical tools for owners, digital CRM for rescues, and an ethical marketplace verified for welfare standards.</p>
+        <div class="icons">
+          <div>
+            <img src="assets/about/icons-parrot-owners.png" alt="Parrot Owners icon" />
+            <h3>Parrot Owners</h3>
+            <p>Routine tracking and care</p>
+          </div>
+          <div>
+            <img src="assets/about/icons-rescues.png" alt="Rescues icon" />
+            <h3>Rescues</h3>
+            <p>Organised adoption flow</p>
+          </div>
+          <div>
+            <img src="assets/about/icons-ethical-sellers.png" alt="Ethical Sellers icon" />
+            <h3>Ethical Sellers</h3>
+            <p>Verified ethical listings</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section features">
-  <h2>What You Can Do</h2>
-  <div class="icons feature-icons">
-    <div>
-      <img src="assets/3.What You Can Do/icons-owner-hub.png" alt="Owner Hub"/>
-      <h3>Owner Hub</h3>
-      <p>Manage feeding, health and care routines</p>
+  <section class="section features">
+    <h2>What You Can Do</h2>
+    <div class="icons feature-icons">
+      <div>
+        <img src="assets/features/icons-owner-hub.png" alt="Owner Hub icon" />
+        <h3>Owner Hub</h3>
+        <p>Manage feeding, health and care routines</p>
+      </div>
+      <div>
+        <img src="assets/features/icons-rescues-tools.png" alt="Rescue Tools icon" />
+        <h3>Rescue Tools</h3>
+        <p>Organise adoption and intake records</p>
+      </div>
+      <div>
+        <img src="assets/features/icons-ethical-sellers.png" alt="Marketplace icon" />
+        <h3>Marketplace</h3>
+        <p>Verified ethical sellers</p>
+      </div>
+      <div>
+        <img src="assets/features/icons-compliance.png" alt="Compliance icon" />
+        <h3>Built-In Compliance</h3>
+        <p>GDPR and DEFRA aligned</p>
+      </div>
     </div>
-    <div>
-      <img src="assets/3.What You Can Do/icons-rescues-tools.png" alt="Rescues"/>
-      <h3>Rescue Tools</h3>
-      <p>Organise adoption and intake records</p>
-    </div>
-    <div>
-      <img src="assets/3.What You Can Do/icons-ethical-sellers.png" alt="Ethical Sellers"/>
-      <h3>Marketplace</h3>
-      <p>Verified ethical sellers</p>
-    </div>
-    <div>
-      <img src="assets/3.What You Can Do/icons-compliance.png" alt="Built-In Compliance"/>
-      <h3>Built-In Compliance</h3>
-      <p>GDPR & DEFRA aligned</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="section cta" id="signup">
-  <div class="cta-wrapper">
-    <div class="cta-text">
-      <h2>Want Early Access?</h2>
-      <p>Join 250+ parrot lovers waiting for early access. Sign up to get updates, launch info, and early features.</p>
-      <form action="https://formspree.io/f/mayvlqvg" method="POST">
-        <input type="email" name="email" placeholder="Email" required />
-        <button type="submit">Sign Up</button>
-      </form>
-      <p class="fine-print"><img src="assets/4.Want Early Access/icons-gdpr.svg" alt="GDPR icon" class="gdpr-icon" /> We respect your inbox and privacy</p>
+  <section class="section cta" id="signup">
+    <div class="cta-wrapper">
+      <div class="cta-text">
+        <h2>Want Early Access?</h2>
+        <p>Join 250+ parrot lovers waiting for early access. Sign up to get updates, launch info, and early features.</p>
+        <form action="https://formspree.io/f/mayvlqvg" method="POST">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input type="email" id="email" name="email" placeholder="Email" required aria-label="Email address for updates" />
+          <button type="submit">Sign Up</button>
+        </form>
+        <p class="fine-print">
+          <img src="assets/cta/icons-gdpr.svg" alt="GDPR icon" class="gdpr-icon" title="GDPR Compliant" />
+          We respect your inbox and privacy
+        </p>
+      </div>
+      <div class="cta-image">
+        <img src="assets/cta/parrot-signup.png" alt="Signup section parrot visual" />
+      </div>
     </div>
-    <div class="cta-image">
-      <img src="assets/4.Want Early Access/parrot-signup.png" alt="Signup Visual" />
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="section impact">
-  <div class="impact-wrapper">
-    <div class="impact-image">
-      <img src="assets/5.Where We Going/parrot-iconography.png" alt="Impact Parrot Iconography" />
+  <section class="section impact">
+    <div class="impact-wrapper">
+      <div class="impact-image">
+        <img src="assets/impact/parrot-iconography.png" alt="Icons showing future vision and roadmap" />
+      </div>
+      <div class="impact-text">
+        <h2>Where We're Going</h2>
+        <ul>
+          <li>✓ 15 rescues expected by launch</li>
+          <li>✓ 25% faster adoptions with rescue tools</li>
+          <li>✓ 2,000+ parrot profiles projected</li>
+          <li>✓ Building a long-term ethical pet care ecosystem</li>
+        </ul>
+      </div>
     </div>
-    <div class="impact-text">
-      <h2>Where We're Going</h2>
-      <ul>
-        <li>✓ 15 rescues expected by launch</li>
-        <li>✓ 25% faster adoptions with rescue tools</li>
-        <li>✓ 2,000+ parrot profiles projected</li>
-        <li>✓ Building a long-term ethical pet care ecosystem</li>
-      </ul>
-    </div>
-  </div>
-</section>
+  </section>
+</main>
 
-<footer class="footer">
-  <img src="assets/6.Footer/parrot-Banner.png" alt="Parrot Banner" class="footer-banner" />
+<footer class="footer" aria-label="ParrotVerse footer with social links">
+  <img src="assets/footer/parrot-Banner.png" alt="Parrot Footer Banner" class="footer-banner" />
   <div class="footer-columns">
     <div class="footer-col">
-      <img src="assets/6.Footer/icon-facebook.svg" alt="Facebook Icon" class="social-icon" />
+      <img src="assets/footer/icon-facebook.svg" alt="Facebook Icon" class="social-icon" title="Follow us on Facebook" />
     </div>
     <div class="footer-col">
-      <img src="assets/6.Footer/icon-instagram.svg" alt="Instagram Icon" class="social-icon" />
+      <img src="assets/footer/icon-instagram.svg" alt="Instagram Icon" class="social-icon" title="Follow us on Instagram" />
     </div>
     <div class="footer-col">
       <p>© ParrotVerse 2025</p>
