@@ -141,8 +141,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  padding: 3rem 2rem;
+  justify-content: center;
+  padding: 3rem 0;
   gap: 2rem;
 }
 
@@ -151,13 +151,17 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 .section-care .image img {
   width: 100%;
-  max-width: none;
-  object-fit: contain;
   height: auto;
+  object-fit: contain;
+  max-width: none;
+  margin: 0;
+  padding: 0;
   align-self: flex-start;
 }
 
@@ -166,7 +170,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .section-care .text-inner {
@@ -175,6 +179,7 @@ img {
   align-items: center;
   text-align: center;
   gap: 2rem;
+  width: 100%;
   max-width: 640px;
   margin: 0 auto;
 }
@@ -182,30 +187,37 @@ img {
 /* ICONS */
 .icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .icon-block {
-  flex: 1 1 30%;
+  flex: 1 1 33%;
+  max-width: 100%;
   text-align: center;
-  max-width: 140px;
 }
 
 .icon-block img {
   width: 80px;
   height: auto;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem auto;
   object-fit: contain;
+}
+
+.icon-block h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
 }
 
 .icon-block p {
   font-size: 0.95rem;
 }
 
-/* DESKTOP MEDIA */
+/* DESKTOP */
 @media (min-width: 769px) {
   .section-care .image img {
     height: 75%;
@@ -213,20 +225,11 @@ img {
   }
 
   .icon-block {
-    max-width: 160px;
-  }
-
-  .icon-block h3 {
-    font-size: 1.05rem;
-    margin-top: 0.5rem;
-  }
-
-  .icon-block p {
-    font-size: 0.9rem;
+    max-width: 100%;
   }
 }
 
-/* MOBILE MEDIA */
+/* MOBILE */
 @media (max-width: 768px) {
   .section-care {
     flex-direction: column;
@@ -238,19 +241,12 @@ img {
   .section-care .text {
     flex: 1 1 100%;
     max-width: 100%;
-    padding: 0;
-  }
-
-  .section-care .image {
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-self: flex-start;
   }
 
   .section-care .image img {
-    width: 50vw;
-    margin-left: 0;
+    width: 100%;
     height: auto;
+    margin: 0;
   }
 
   .section-care .text-inner {
@@ -258,13 +254,14 @@ img {
   }
 
   .icons {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 1rem;
   }
 
   .icon-block {
-    max-width: 100%;
+    flex: 1 1 auto;
+    max-width: 33%;
   }
 
   .hero-content h1 {
