@@ -136,7 +136,7 @@ img {
   outline-offset: 2px;
 }
 
-/* SECTION-CARE LAYOUT */
+/* SECTION-CARE */
 .section-care {
   display: flex;
   flex-wrap: wrap;
@@ -146,7 +146,6 @@ img {
   gap: 2rem;
 }
 
-/* IMAGE WRAPPER */
 .section-care .image {
   flex: 1 1 50%;
   display: flex;
@@ -154,34 +153,80 @@ img {
   align-items: flex-start;
 }
 
-/* IMAGE STYLING */
 .section-care .image img {
   width: 100%;
   max-width: none;
   object-fit: contain;
   height: auto;
+  align-self: flex-start;
 }
 
-/* TEXT WRAPPER */
 .section-care .text {
   flex: 1 1 50%;
-  text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 2rem;
 }
 
-/* DESKTOP: Reduce image height */
+.section-care .text-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ICONS */
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.icon-block {
+  flex: 1 1 30%;
+  text-align: center;
+  max-width: 140px;
+}
+
+.icon-block img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.icon-block p {
+  font-size: 0.95rem;
+}
+
+/* DESKTOP MEDIA */
 @media (min-width: 769px) {
   .section-care .image img {
     height: 75%;
     max-height: 500px;
-    align-self: flex-start;
+  }
+
+  .icon-block {
+    max-width: 160px;
+  }
+
+  .icon-block h3 {
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
+  }
+
+  .icon-block p {
+    font-size: 0.9rem;
   }
 }
 
-/* MOBILE: Adjust image width and layout */
+/* MOBILE MEDIA */
 @media (max-width: 768px) {
   .section-care {
     flex-direction: column;
@@ -208,40 +253,23 @@ img {
     height: auto;
   }
 
-  .section-care .text {
-    padding: 1.5rem 0;
-    text-align: center;
+  .section-care .text-inner {
+    padding: 0 1rem;
+  }
+
+  .icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .icon-block {
+    max-width: 100%;
   }
 
   .hero-content h1 {
     font-size: 2.5rem;
   }
-}
-
-/* ICONS */
-.icons {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-
-.icon-block {
-  flex: 1 1 30%;
-  text-align: center;
-  max-width: 120px;
-}
-
-.icon-block img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 1rem;
-  object-fit: contain;
-}
-
-.icon-block p {
-  font-size: 0.95rem;
 }
 
 /* FEATURE CARDS */
