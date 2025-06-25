@@ -7,43 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="public/assets/fav.svg" type="image/svg+xml" />
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow-x: hidden;
-      font-family: 'Lato', sans-serif;
-      font-weight: 400;
-      background-color: #ffffff;
-      color: #111827;
-    }
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
-    img {
-      max-width: 100%;
-      display: block;
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-    .logo img {
-      width: 180px;
-    }
-    .hero-content h1 {
-      font-size: 3.5rem;
-      line-height: 1.2;
-    }
-    @media (max-width: 768px) {
-      .hero-content h1 {
-        font-size: 2.2rem;
-        line-height: 1.3;
-      }
-    }
-  </style>
 </head>
 <body id="top">
   <main>
@@ -176,7 +139,8 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add('is-visible');
       });
-    });
+    }, { threshold: 0.1 });
+
     document.querySelectorAll('[data-fade]').forEach(el => observer.observe(el));
   </script>
 </body>

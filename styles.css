@@ -57,7 +57,7 @@ img {
   pointer-events: none;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
   position: relative;
   width: 100vw;
@@ -66,13 +66,13 @@ img {
 }
 
 .hero-background img {
-  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 1;
 }
 
 .hero-content {
@@ -150,44 +150,17 @@ img {
 
 .section-care .image {
   flex: 1 1 50%;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 .section-care .image img {
   width: 100%;
   max-width: none;
-  margin: 0;
-  padding: 0;
-  display: block;
   object-fit: contain;
-}
-
-/* Ensures image always aligns to left on all screens */
-@media (max-width: 768px) {
-  .section-care {
-    flex-direction: column;
-  }
-
-  .section-care .image,
-  .section-care .text {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .section-care .image {
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0;
-    margin: 0;
-  }
-
-  .section-care .image img {
-    margin-left: 0;
-  }
 }
 
 .section-care .text {
@@ -214,7 +187,7 @@ img {
   line-height: 1.6;
 }
 
-/* ICONS IN SECTION-CARE */
+/* ICONS */
 .icons {
   display: flex;
   justify-content: space-between;
@@ -238,6 +211,36 @@ img {
 
 .icon-block p {
   font-size: 0.95rem;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .section-care {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .section-care .image,
+  .section-care .text {
+    flex: 1 1 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .section-care .image img {
+    max-height: 250px;
+    margin: 0 auto;
+  }
+
+  .section-care .text {
+    padding: 1.5rem 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
 }
 
 /* FEATURE CARDS */
