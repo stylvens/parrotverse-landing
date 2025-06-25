@@ -140,14 +140,14 @@ img {
 .section-care {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 3rem 0;
   gap: 2rem;
 }
 
 .section-care .image {
-  flex: 1 1 50%;
+  flex:
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -202,7 +202,7 @@ img {
 }
 
 .icon-block img {
-  width: 80px;
+  width: 160px;
   height: auto;
   margin: 0 auto 1rem auto;
   object-fit: contain;
@@ -233,7 +233,7 @@ img {
 @media (max-width: 768px) {
   .section-care {
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding:rem 1rem;
     gap: 2rem;
   }
 
@@ -250,13 +250,13 @@ img {
   }
 
   .section-care .text-inner {
-    padding: 0 1rem;
+    padding:rem;
   }
 
   .icons {
     flex-wrap: nowrap;
     justify-content: space-between;
-    gap: 1rem;
+    gap: rem;
   }
 
   .icon-block {
