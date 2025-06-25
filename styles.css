@@ -137,55 +137,55 @@ img {
 }
 
 /* SECTION-CARE */
-.section-care {
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 0;
-  padding: 3rem 0;
-  margin: 0;
-}
-
-.section-care .image {
-  flex: 1 1 50%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0;
-  margin: 0;
-}
-
 .section-care .image img {
   width: 100%;
   max-width: none;
   object-fit: contain;
 }
 
-.section-care .text {
-  flex: 1 1 50%;
-  padding: 2rem;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* Desktop: reduce height of image */
+@media (min-width: 769px) {
+  .section-care .image img {
+    height: 75%;
+    max-height: 500px;
+  }
 }
 
-.section-care h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+/* Mobile: align image left and scale */
+@media (max-width: 768px) {
+  .section-care {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .section-care .image,
+  .section-care .text {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .section-care .image {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .section-care .image img {
+    width: 25vw;
+    max-height: none;
+    margin-left: 0;
+  }
+
+  .section-care .text {
+    padding: 1.5rem 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
 }
 
-.section-care p,
-.section-care h3 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
 
 /* ICONS */
 .icons {
@@ -213,35 +213,6 @@ img {
   font-size: 0.95rem;
 }
 
-/* MOBILE OPTIMIZATION */
-@media (max-width: 768px) {
-  .section-care {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    gap: 2rem;
-  }
-
-  .section-care .image,
-  .section-care .text {
-    flex: 1 1 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: 0;
-  }
-
-  .section-care .image img {
-    max-height: 250px;
-    margin: 0 auto;
-  }
-
-  .section-care .text {
-    padding: 1.5rem 0;
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-}
 
 /* FEATURE CARDS */
 .feature-cards {
