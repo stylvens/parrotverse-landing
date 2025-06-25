@@ -136,22 +136,52 @@ img {
   outline-offset: 2px;
 }
 
-/* SECTION-CARE */
+/* SECTION-CARE LAYOUT */
+.section-care {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+
+/* IMAGE WRAPPER */
+.section-care .image {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* IMAGE STYLING */
 .section-care .image img {
   width: 100%;
   max-width: none;
   object-fit: contain;
+  height: auto;
 }
 
-/* Desktop: reduce height of image */
+/* TEXT WRAPPER */
+.section-care .text {
+  flex: 1 1 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* DESKTOP: Reduce image height */
 @media (min-width: 769px) {
   .section-care .image img {
     height: 75%;
     max-height: 500px;
+    align-self: flex-start;
   }
 }
 
-/* Mobile: align image left and scale */
+/* MOBILE: Adjust image width and layout */
 @media (max-width: 768px) {
   .section-care {
     flex-direction: column;
@@ -169,23 +199,24 @@ img {
   .section-care .image {
     justify-content: flex-start;
     align-items: flex-start;
+    align-self: flex-start;
   }
 
   .section-care .image img {
-    width: 25vw;
-    max-height: none;
+    width: 50vw;
     margin-left: 0;
+    height: auto;
   }
 
   .section-care .text {
     padding: 1.5rem 0;
+    text-align: center;
   }
 
   .hero-content h1 {
     font-size: 2.5rem;
   }
 }
-
 
 /* ICONS */
 .icons {
@@ -212,7 +243,6 @@ img {
 .icon-block p {
   font-size: 0.95rem;
 }
-
 
 /* FEATURE CARDS */
 .feature-cards {
