@@ -30,141 +30,154 @@
       color: inherit;
       text-decoration: none;
     }
+    .logo img {
+      width: 180px;
+    }
+    .hero-content h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+    }
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.2rem;
+        line-height: 1.3;
+      }
+    }
   </style>
 </head>
-<body>
+<body id="top">
   <main>
-<header class="hero">
-  <div class="logo">
-    <img src="public/assets/logo-black.svg" alt="ParrotVerse Logo" aria-label="ParrotVerse logo" />
-  </div>
-  <div class="hero-background">
-    <img src="public/assets/parrot-hero.png" alt="Parrot with leaves" />
-  </div>
-  <div class="hero-content">
-    <h1>The Digital Home for Companion Parrots</h1>
-    <p>Tools, care and community for parrot owners and rescues</p>
-    <a href="#signup" class="cta-button">Get Early Access*</a>
-    <small>*Free for early users. No spam.</small>
-  </div>
-</header>
-
-<section class="section-care full-bleed" data-fade>
-  <div class="image">
-    <img src="public/assets/iphone-cut.svg" alt="Mobile app preview" />
-  </div>
-  <div class="text">
-    <h2>Designed for Every Part of Parrot Care</h2>
-    <p>
-      ParrotVerse is a mobile-first platform that supports responsible parrot care and adoption.
-      We offer practical tools for owners, digital CRM for rescues, and an ethical marketplace
-      verified for welfare standards.
-    </p>
-    <div class="icons">
-      <div class="icon-block">
-        <img src="public/assets/icon-owners.svg" alt="Parrot Owners" />
-        <h3>Parrot Owners</h3>
-        <p>Routine tracking and care</p>
+    <header class="hero">
+      <a href="#top" class="logo">
+        <img src="public/assets/logo-black.svg" alt="ParrotVerse Logo" aria-label="ParrotVerse logo" />
+      </a>
+      <div class="hero-background">
+        <img src="public/assets/parrot-hero.png" alt="Parrot with leaves" />
       </div>
-      <div class="icon-block">
-        <img src="public/assets/icon-rescues.svg" alt="Rescues" />
-        <h3>Rescues</h3>
-        <p>Organised adoption flow</p>
+      <div class="hero-content">
+        <h1>The Digital Home for Companion Parrots</h1>
+        <p>Tools, care and community for parrot owners and rescues</p>
+        <a href="#signup" class="cta-button">Get Early Access*</a>
+        <small>*Free for early users. No spam.</small>
       </div>
-      <div class="icon-block">
-        <img src="public/assets/icon-ethicalsellers.svg" alt="Ethical Sellers" />
-        <h3>Ethical Sellers</h3>
-        <p>Verified ethical listings</p>
+    </header>
+
+    <section class="section-care full-bleed" data-fade>
+      <div class="image">
+        <img src="public/assets/iphone-cut.svg" alt="Mobile app preview" loading="lazy" />
+      </div>
+      <div class="text">
+        <h2>Designed for Every Part of Parrot Care</h2>
+        <p>
+          ParrotVerse is a mobile-first platform that supports responsible parrot care and adoption.
+          We offer practical tools for owners, digital CRM for rescues, and an ethical marketplace
+          verified for welfare standards.
+        </p>
+        <div class="icons">
+          <div class="icon-block">
+            <img src="public/assets/icon-owners.svg" alt="Parrot Owners" loading="lazy" />
+            <h3>Parrot Owners</h3>
+            <p>Routine tracking and care</p>
+          </div>
+          <div class="icon-block">
+            <img src="public/assets/icon-rescues.svg" alt="Rescues" loading="lazy" />
+            <h3>Rescues</h3>
+            <p>Organised adoption flow</p>
+          </div>
+          <div class="icon-block">
+            <img src="public/assets/icon-ethicalsellers.svg" alt="Ethical Sellers" loading="lazy" />
+            <h3>Ethical Sellers</h3>
+            <p>Verified ethical listings</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-features" data-fade>
+      <h2>What You Can Do</h2>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <img src="public/assets/feature-ownerhub.svg" alt="Owner Hub" loading="lazy" />
+          <h3>Owner Hub</h3>
+          <p>Manage feeding, health and care routines</p>
+        </div>
+        <div class="feature-card">
+          <img src="public/assets/feature-rescuetools.svg" alt="Rescue Tools" loading="lazy" />
+          <h3>Rescue Tools</h3>
+          <p>Organise adoption and intake records</p>
+        </div>
+        <div class="feature-card">
+          <img src="public/assets/feature-marketplace.svg" alt="Marketplace" loading="lazy" />
+          <h3>Verified Ethical Sellers</h3>
+          <p>Verified ethical sellers</p>
+        </div>
+        <div class="feature-card">
+          <img src="public/assets/feature-compliance.svg" alt="Compliance" loading="lazy" />
+          <h3>Built-In Compliance</h3>
+          <p>GDPR & DEFRA aligned</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-signup full-bleed" id="signup" data-fade>
+      <div class="signup-text">
+        <h2>Want Early Access?</h2>
+        <p>Join 250+ parrot lovers waiting for early access.<br>
+          Sign up to get updates, launch info, and early features.</p>
+        <p class="gdpr-note">
+          <img src="public/assets/icons-gdpr.svg" alt="GDPR Icon" loading="lazy" />
+          <em>We respect your inbox and privacy</em>
+        </p>
+      </div>
+      <div class="signup-form">
+        <img src="public/assets/parrot-signup.png" alt="Sign up background" class="signup-image" loading="lazy" />
+        <div class="form-overlay">
+          <form>
+            <input type="email" placeholder="Email" aria-label="Email address" required />
+            <button type="submit">SIGN UP</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-impact full-bleed" data-fade>
+      <div class="impact-image">
+        <img src="public/assets/parrot-iconography.png" alt="Impact icons" loading="lazy" />
+      </div>
+      <div class="impact-copy">
+        <h2>Where We're Going</h2>
+        <ul>
+          <li>✓ 15 rescues expected by launch</li>
+          <li>✓ 25% faster adoptions with rescue tools</li>
+          <li>✓ 2,000+ parrot profiles projected</li>
+          <li>✓ Building a long-term ethical pet care ecosystem</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <img class="footer-bg" src="public/assets/parrot-Banner.png" alt="Footer Banner" loading="lazy" />
+    <div class="footer-columns">
+      <div class="footer-col">
+        <img src="public/assets/icon-facebook.svg" alt="Facebook Icon" loading="lazy" />
+      </div>
+      <div class="footer-col">
+        <img src="public/assets/icon-instagram.svg" alt="Instagram Icon" loading="lazy" />
+      </div>
+      <div class="footer-col">
+        <p>© ParrotVerse 2025</p>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section class="section-features" data-fade>
-  <h2>What You Can Do</h2>
-  <div class="feature-cards">
-    <div class="feature-card">
-      <img src="public/assets/feature-ownerhub.svg" alt="Owner Hub" />
-      <h3>Owner Hub</h3>
-      <p>Manage feeding, health and care routines</p>
-    </div>
-    <div class="feature-card">
-      <img src="public/assets/feature-rescuetools.svg" alt="Rescue Tools" />
-      <h3>Rescue Tools</h3>
-      <p>Organise adoption and intake records</p>
-    </div>
-    <div class="feature-card">
-      <img src="public/assets/feature-marketplace.svg" alt="Marketplace" />
-      <h3>Verified Ethical Sellers</h3>
-      <p>Verified ethical sellers</p>
-    </div>
-    <div class="feature-card">
-      <img src="public/assets/feature-compliance.svg" alt="Compliance" />
-      <h3>Built-In Compliance</h3>
-      <p>GDPR & DEFRA aligned</p>
-    </div>
-  </div>
-</section>
-
-<section class="section-signup full-bleed" id="signup" data-fade>
-  <div class="signup-text">
-    <h2>Want Early Access?</h2>
-    <p>Join 250+ parrot lovers waiting for early access.<br>
-      Sign up to get updates, launch info, and early features.</p>
-    <p class="gdpr-note">
-      <img src="public/assets/icons-gdpr.svg" alt="GDPR Icon" />
-      <em>We respect your inbox and privacy</em>
-    </p>
-  </div>
-  <div class="signup-form">
-    <img src="public/assets/parrot-signup.png" alt="Sign up background" class="signup-image" />
-    <div class="form-overlay">
-      <form>
-        <input type="email" placeholder="Email" aria-label="Email address" required />
-        <button type="submit">SIGN UP</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<section class="section-impact full-bleed" data-fade>
-  <div class="impact-image">
-    <img src="public/assets/parrot-iconography.png" alt="Impact icons" />
-  </div>
-  <div class="impact-copy">
-    <h2>Where We're Going</h2>
-    <ul>
-      <li>✓ 15 rescues expected by launch</li>
-      <li>✓ 25% faster adoptions with rescue tools</li>
-      <li>✓ 2,000+ parrot profiles projected</li>
-      <li>✓ Building a long-term ethical pet care ecosystem</li>
-    </ul>
-  </div>
-</section>
-</main>
-
-<footer class="footer">
-  <img class="footer-bg" src="public/assets/parrot-Banner.png" alt="Footer Banner" />
-  <div class="footer-columns">
-    <div class="footer-col">
-      <img src="public/assets/icon-facebook.svg" alt="Facebook Icon" />
-    </div>
-    <div class="footer-col">
-      <img src="public/assets/icon-instagram.svg" alt="Instagram Icon" />
-    </div>
-    <div class="footer-col">
-      <p>© ParrotVerse 2025</p>
-    </div>
-  </div>
-</footer>
-
-<script>
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('is-visible');
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('is-visible');
+      });
     });
-  });
-  document.querySelectorAll('[data-fade]').forEach(el => observer.observe(el));
-</script>
+    document.querySelectorAll('[data-fade]').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
