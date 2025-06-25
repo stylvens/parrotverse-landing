@@ -2,28 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ParrotVerse - Early Access</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>ParrotVerse – Early Access</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="public/assets/fav.svg" type="image/svg+xml" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      background-color: #ffffff;
+      color: #111827;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-
-<!-- <header class="hero">
-  <div class="logo">
-    <img src="public/assets/logo-black.svg" alt="ParrotVerse Logo" aria-label="ParrotVerse logo" />
-  </div>
-  <div class="hero-background">
-    <img src="public/assets/parrot-hero.png" alt="Parrot with leaves" />
-  </div>
-  <div class="hero-content">
-    <h1>The Digital Home for Companion Parrots</h1>
-    <p>Tools, care and community for parrot owners and rescues</p>
-    <button>Get Early Access*</button>
-    <small>*Free for early users. No spam.</small>
-  </div>
-</header> -->
-
+  <main>
 <header class="hero">
   <div class="logo">
     <img src="public/assets/logo-black.svg" alt="ParrotVerse Logo" aria-label="ParrotVerse logo" />
@@ -39,7 +49,7 @@
   </div>
 </header>
 
-<section class="section-care">
+<section class="section-care full-bleed" data-fade>
   <div class="image">
     <img src="public/assets/iphone-cut.svg" alt="Mobile app preview" />
   </div>
@@ -70,7 +80,7 @@
   </div>
 </section>
 
-<section class="section-features">
+<section class="section-features" data-fade>
   <h2>What You Can Do</h2>
   <div class="feature-cards">
     <div class="feature-card">
@@ -96,22 +106,7 @@
   </div>
 </section>
 
-<!--<section class="section-signup">
-  <div class="signup-text">
-    <h2>Want Early Access?</h2>
-    <p>Join 250+ parrot lovers waiting for early access.<br>Sign up to get updates, launch info, and early features.</p>
-    <p class="gdpr-note"><img src="public/assets/icons-gdpr.svg" alt="GDPR Icon" /> <em>We respect your inbox and privacy</em></p>
-  </div>
-  <div class="signup-form">
-    <img src="public/assets/parrot-signup.png" alt="Sign up background" class="signup-image" />
-    <form>
-      <input type="email" placeholder="Email" aria-label="Email address" required />
-      <button type="submit">SIGN UP</button>
-    </form>
-  </div>
-</section> -->
-
-<section class="section-signup" id="signup">
+<section class="section-signup full-bleed" id="signup" data-fade>
   <div class="signup-text">
     <h2>Want Early Access?</h2>
     <p>Join 250+ parrot lovers waiting for early access.<br>
@@ -132,8 +127,7 @@
   </div>
 </section>
 
-
-<section class="section-impact">
+<section class="section-impact full-bleed" data-fade>
   <div class="impact-image">
     <img src="public/assets/parrot-iconography.png" alt="Impact icons" />
   </div>
@@ -147,15 +141,30 @@
     </ul>
   </div>
 </section>
+</main>
 
 <footer class="footer">
   <img class="footer-bg" src="public/assets/parrot-Banner.png" alt="Footer Banner" />
   <div class="footer-columns">
-    <div><img src="public/assets/icon-facebook.svg" alt="Facebook Icon" /></div>
-    <div><img src="public/assets/icon-instagram.svg" alt="Instagram Icon" /></div>
-    <div><p>© ParrotVerse 2025</p></div>
+    <div class="footer-col">
+      <img src="public/assets/icon-facebook.svg" alt="Facebook Icon" />
+    </div>
+    <div class="footer-col">
+      <img src="public/assets/icon-instagram.svg" alt="Instagram Icon" />
+    </div>
+    <div class="footer-col">
+      <p>© ParrotVerse 2025</p>
+    </div>
   </div>
 </footer>
 
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('is-visible');
+    });
+  });
+  document.querySelectorAll('[data-fade]').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
