@@ -514,3 +514,17 @@ img {
     height: auto;
   }
 }
+
+.gdpr-note {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.gdpr-note img {
+  width: 20px;
+  height: auto;
+}
+
