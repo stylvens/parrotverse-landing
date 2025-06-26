@@ -462,12 +462,13 @@ img {
   }
 }
 
-/* SECTION-SIGNUP */
+
+./* SECTION-SIGNUP */
 .section-5050 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 100vh;
+  height: 70vh; /* Force section height to 70% of viewport */
   background-color: #f0c0b3;
 }
 
@@ -482,15 +483,21 @@ img {
 .text-half {
   padding: 3rem;
   text-align: center;
+  height: 100%; /* match image-half height */
 }
 
 .text-inner {
   max-width: 500px;
+  margin: auto;
+}
+
+.image-half {
+  height: 100%;
 }
 
 .image-half img {
   width: 100%;
-  height: 70%;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -498,6 +505,8 @@ img {
 /* Responsive: Stack on Mobile */
 @media (max-width: 768px) {
   .section-5050 {
+    flex-direction: column;
+    height: auto; /* allow natural height on mobile */
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
@@ -509,12 +518,18 @@ img {
 
   .text-half {
     padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .image-half {
+    height: auto;
   }
 
   .image-half img {
     height: auto;
   }
 }
+
 
 .gdpr-note {
   display: flex;
