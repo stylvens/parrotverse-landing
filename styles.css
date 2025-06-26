@@ -180,7 +180,7 @@ img {
 
 .section-care .text-inner {
   display: flex;
-  flex-direction:;
+  flex-direction:column;
   align-items: center;
   text-align: center;
   gap: 2rem;
@@ -242,7 +242,7 @@ img {
 /* MOBILE */
 @media (max-width: 768px) {
   .section-care {
-    flex-direction: column;
+    flex-direction:
     padding:rem 1rem;
     gap: 2rem;
   }
