@@ -248,8 +248,8 @@ img {
   }
 
   .icon-block {
-    flex: 1 1 100%;
-    max-width: 100%;
+    flex: 1 1 33%;
+    max-width: 33%;
   }
 }
 
@@ -623,6 +623,12 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+}
 
 
 
