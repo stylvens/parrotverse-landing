@@ -145,6 +145,7 @@ img {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
+  color: white;
   padding: 3rem 0;
   gap: 2rem;
 }
