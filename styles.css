@@ -87,7 +87,7 @@ img {
 .hero-content {
   position: absolute;
   top: 18%;
-  left: 5%;
+  left: 10%;
   width: 90%;
   max-width: 600px;
   z-index: 5;
