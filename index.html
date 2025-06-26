@@ -137,19 +137,21 @@
   </footer>
 
   <script>
-  // Save scroll position before unload
-  window.addEventListener('pagehide', () => {
+  // Save scroll position on unload
+  window.addEventListener('beforeunload', () => {
     sessionStorage.setItem('scroll-pos', window.scrollY);
   });
 
-  // Restore scroll position after load (after a short delay)
-  window.addEventListener('DOMContentLoaded', () => {
+  // Restore scroll position after full page load
+  window.addEventListener('load', () => {
     const savedY = sessionStorage.getItem('scroll-pos');
     if (savedY !== null) {
-      setTimeout(() => window.scrollTo(0, parseInt(savedY)), 50);
+      window.scrollTo({ top: parseInt(savedY), behavior: 'instant' });
+      sessionStorage.removeItem('scroll-pos');
     }
   });
 </script>
+
 
 </body>
 </html>
