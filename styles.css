@@ -470,35 +470,47 @@ img {
   min-height: 100vh;
 }
 
-.text-block,
-.image-block {
+.half {
   flex: 1 1 50%;
   max-width: 50%;
-  box-sizing: border-box;
-  padding: 2rem;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.text-half {
+  padding: 3rem;
+  background-color: #ffffff;
   text-align: center;
 }
 
-.image-block img {
+.text-inner {
+  max-width: 500px;
+}
+
+.image-half img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
-/* Mobile */
+/* Responsive: Stack on Mobile */
 @media (max-width: 768px) {
-  .text-block,
-  .image-block {
-    flex: 1 1 100%;
-    max-width: 100%;
-    padding: 1.5rem;
+  .section-5050 {
+    flex-direction: column;
+    min-height: auto;
   }
 
-  .image-block img {
-    width: 100%;
+  .half {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .text-half {
+    padding: 2rem 1rem;
+  }
+
+  .image-half img {
     height: auto;
   }
 }
