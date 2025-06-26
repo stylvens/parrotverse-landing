@@ -463,12 +463,11 @@ img {
 }
 
 
-./* SECTION-SIGNUP */
+/* SECTION-SIGNUP */
 .section-5050 {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  height: 70vh; /* Force section height to 70% of viewport */
+  height: 70vh;
   background-color: #f0c0b3;
 }
 
@@ -478,21 +477,17 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%; /* Ensure both halves fill the section */
 }
 
 .text-half {
   padding: 3rem;
   text-align: center;
-  height: 100%; /* match image-half height */
 }
 
 .text-inner {
   max-width: 500px;
   margin: auto;
-}
-
-.image-half {
-  height: 100%;
 }
 
 .image-half img {
@@ -506,29 +501,41 @@ img {
 @media (max-width: 768px) {
   .section-5050 {
     flex-direction: column;
-    height: auto; /* allow natural height on mobile */
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    height: auto;
+    padding: 2rem 1rem;
   }
 
   .half {
     max-width: 100%;
     flex: 1 1 100%;
+    height: auto;
   }
 
   .text-half {
     padding: 2rem 1rem;
-    height: auto;
-  }
-
-  .image-half {
-    height: auto;
   }
 
   .image-half img {
     height: auto;
   }
 }
+
+.gdpr-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.gdpr-note img {
+  width: 20px;
+  height: auto;
+}
+
 
 
 .gdpr-note {
