@@ -616,22 +616,22 @@ img {
   text-align: center;
 }
 
-.impact-copy h2 {
-  color: white;
-  margin-bottom: 1.5rem;
+.section-impact h2 {
+  color: #32757f; /* Use default h1/h2 colour */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
-.impact-copy ul {
+.section-impact p,
+.section-impact li {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
-.impact-copy li {
-  margin-bottom: 1rem;
-  font-weight: bold;
-  color: white;
-}
 
 /* Mobile: stack columns */
 @media (max-width: 768px) {
