@@ -136,21 +136,6 @@ img {
   outline-offset: 2px;
 }
 
-/*Mobile Optimisation*/
-@media (max-width: 768px) {
-  .hero {
-    height: 70vh;
-  }
-
-  .hero-background img {
-    height: 70vh;
-  }
-
-  .hero-content {
-    top: 40%;
-  }
-}
-
 
 
 
@@ -347,4 +332,19 @@ img {
 
 .footer-col p {
   font-size: 0.85rem;
+}
+
+/*Mobile Optimisation*/
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-background img {
+    height: 70vh;
+  }
+
+  .hero-content {
+    top: 40%;
+  }
 }
