@@ -206,6 +206,53 @@ img {
   }
 }
 
+/* ICONS */
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.icon-block {
+  flex: 1 1 33%;
+  max-width: 33%;
+  text-align: center;
+}
+
+.icon-block img {
+  width: 160px;
+  height: auto;
+  margin: 0 auto 1rem auto;
+  object-fit: contain;
+}
+
+.icon-block h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.icon-block p {
+  font-size: 0.95rem;
+}
+
+/* Responsive fix for mobile */
+@media (max-width: 768px) {
+  .icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .icon-block {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 
 
 /* FEATURE CARDS */
