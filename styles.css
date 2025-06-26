@@ -500,6 +500,8 @@ img {
   .section-5050 {
     flex-direction: column;
     min-height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .half {
