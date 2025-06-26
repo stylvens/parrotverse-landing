@@ -180,7 +180,7 @@ img {
 
 .section-care .text-inner {
   display: flex;
-  flex-direction: column;
+  flex-direction:;
   align-items: center;
   text-align: center;
   gap: 2rem;
