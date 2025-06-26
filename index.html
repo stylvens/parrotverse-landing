@@ -145,5 +145,20 @@
 
     document.querySelectorAll('[data-fade]').forEach(el => observer.observe(el));
   </script>
+  <script>
+  // Save scroll position before page unload
+  window.addEventListener('beforeunload', () => {
+    localStorage.setItem('scrollY', window.scrollY);
+  });
+
+  // Restore scroll position after page load
+  window.addEventListener('load', () => {
+    const scrollY = localStorage.getItem('scrollY');
+    if (scrollY !== null) {
+      window.scrollTo(0, parseInt(scrollY));
+    }
+  });
+</script>
+
 </body>
 </html>
