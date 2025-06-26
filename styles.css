@@ -292,8 +292,8 @@ img {
   }
 
   .feature-card img {
-    width: 40px;
-    height: 40px;
+    width: 128px;
+    height: 128px;
   }
 
   .feature-card h3 {
@@ -429,8 +429,8 @@ img {
 }
 
 .feature-card img {
-  width: 80px;
-  height: 80px;
+  width: 128px;
+  height: 128px;
   margin-bottom: 1rem;
   object-fit: contain;
 }
