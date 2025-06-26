@@ -188,6 +188,11 @@ img {
   margin: 0 auto;
 }
 
+.section-care {
+  background-color: #f2efe6;
+}
+
+
 /* ICONS */
 .icons {
   display: flex;
