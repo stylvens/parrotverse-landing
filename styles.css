@@ -224,7 +224,7 @@ img {
 }
 
 .icon-block img {
-  width: 160px;
+  width: 320px;
   height: auto;
   margin: 0 auto 1rem auto;
   object-fit: contain;
