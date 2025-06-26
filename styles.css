@@ -465,32 +465,30 @@ img {
 /* SECTION-SIGNUP */
 .section-signup {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: stretch;
-  justify-content: center;
-  min-height: 100%;
+  height: 100vh;
 }
 
+.signup-text,
 .signup-form {
-  position: relative;
-  height: auto; /* Let it size naturally */
+  flex: 1 1 50%;
+  max-width: 50%;
+  height: 100%;
 }
 
 .signup-text {
- .signup-text {
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Center horizontally */
-  text-align: center;  /* Center text */
-  height: 100%;        /* Match image height */
+  align-items: center;
+  text-align: center;
   box-sizing: border-box;
 }
 
-}
-
 .signup-form {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -544,46 +542,5 @@ img {
 @media (max-width: 768px) {
   .section-signup {
     flex-direction: column;
+    height: auto;
   }
-
-  .signup-text,
-  .signup-form {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .form-overlay {
-    margin: 2rem;
-  }
-}
-
-@media (min-width: 769px) {
-  .signup-text {
-    height: 100%;
-  }
-}
-
-@media (min-width: 769px) {
-  .section-signup {
-    height: 100vh;
-  }
-
-  .signup-text,
-  .signup-form {
-    height: 100%;
-  }
-
-  .signup-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 4rem 2rem;
-  }
-
-  .signup-image {
-    height: 100vh;
-    object-fit: cover;
-  }
-}
-
