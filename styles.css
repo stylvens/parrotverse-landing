@@ -468,7 +468,7 @@ img {
   flex-wrap: wrap;
   width: 100%;
   min-height: 100vh;
-
+  background-color: ##f0c0b3;
 }
 
 .half {
@@ -481,7 +481,6 @@ img {
 
 .text-half {
   padding: 3rem;
-  background-color: ##f0c0b3;
   text-align: center;
 }
 
