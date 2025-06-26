@@ -532,3 +532,36 @@ img {
   height: auto;
 }
 
+.section-impact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.impact-image,
+.impact-copy {
+  flex: 1 1 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+.impact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mobile: stack columns */
+@media (max-width: 768px) {
+  .impact-image,
+  .impact-copy {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .impact-image img {
+    height: auto;
+  }
+}
+
+
