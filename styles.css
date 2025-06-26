@@ -410,8 +410,8 @@ img {
 }
 
 .feature-card img {
-  width: 128px;
-  height: 128px;
+  width: 256px;
+  height: 256px;
   margin-bottom: 1rem;
   object-fit: contain;
 }
