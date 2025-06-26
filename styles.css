@@ -239,31 +239,22 @@ img {
   font-size: 0.95rem;
 }
 
-/* Responsive fix for mobile */
 @media (max-width: 768px) {
-  .icons {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-
   .icon-block {
-    flex: 1 1 33%;
-    max-width: 33%;
-  }
-}
-
-@media (max-width: 768px) {
-  .icons {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    gap: 1.5rem;
-  }
-
-  .icon-block {
+    width: 120px;
     flex: 0 0 auto;
-    width: 160px;
+  }
+
+  .icon-block img {
+    width: 100px;
+  }
+
+  .icon-block h3 {
+    font-size: 0.95rem;
+  }
+
+  .icon-block p {
+    font-size: 0.85rem;
   }
 }
 
@@ -276,14 +267,15 @@ img {
   justify-items: center;
 }
 
-@media (max-width: 480px) {
-  .feature-card {
-    padding: 1.5rem 1rem;
+@media (max-width: 768px) {
+  .section-features h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .feature-card img {
-    width: 128px;
-    height: 128px;
+    width: 120px;
+    height: 120px;
   }
 
   .feature-card h3 {
@@ -631,5 +623,18 @@ img {
   }
 }
 
+
+
+@media (max-width: 768px) {
+  .section-care {
+    margin-top: 2rem;
+  }
+}
+
+.section-care .text-inner h2 {
+  position: relative;
+  z-index: 1;
+  padding-top: 1rem;
+}
 
 
