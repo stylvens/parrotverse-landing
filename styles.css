@@ -152,7 +152,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 70vh; /* Match other sections */
+  height: 70vh;
   background-color: #f2efe6;
 }
 
@@ -160,7 +160,7 @@ img {
 .section-care .text {
   flex: 1 1 50%;
   max-width: 50%;
-  height: 100%; /* Ensure both sides align */
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,8 +168,9 @@ img {
 
 .section-care .image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 75%;
+  max-height: 500px;
+  object-fit: contain;
   display: block;
 }
 
@@ -178,7 +179,6 @@ img {
   padding: 2rem;
   text-align: center;
 }
-
 
 /* ICONS */
 .icons {
@@ -213,39 +213,7 @@ img {
   font-size: 0.95rem;
 }
 
-/* DESKTOP */
-@media (min-width: 769px) {
-  .section-care .image img {
-    height: 75%;
-    max-height: 500px;
-  }
-
-  .icon-block {
-    max-width: 100%;
-  }
-}
-
 /* MOBILE */
-/*@media (max-width: 768px) {
-  .section-care {
-    flex-direction:
-    padding:rem 1rem;
-    gap: 2rem;
-  }
-
-  .section-care .image,
-  .section-care .text {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .section-care .image img {
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }*/
-
-
 @media (max-width: 768px) {
   .section-care {
     flex-direction: column;
@@ -254,35 +222,32 @@ img {
 
   .section-care .image,
   .section-care .text {
-    max-width: 100%;
     flex: 1 1 100%;
+    max-width: 100%;
     height: auto;
   }
 
   .section-care .image img {
     height: auto;
+    width: 100%;
   }
-}
 
   .section-care .text-inner {
-    padding:rem;
+    padding: 2rem 1rem;
   }
 
   .icons {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
   }
 
   .icon-block {
-    flex: 1 1 auto;
-    max-width: 33%;
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
+    max-width: 100%;
+    flex: 1 1 100%;
   }
 }
+
 
 /* FEATURE CARDS */
 .feature-cards {
