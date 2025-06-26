@@ -26,6 +26,15 @@ h1, h2, h3 {
   line-height: 1.3;
 }
 
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #32757f;
+  margin-bottom: 2rem;
+}
+
+
 /* BODY COPY */
 p, small, em, li {
   font-family: 'Lato', sans-serif;
@@ -458,7 +467,7 @@ img {
   }
 
   .section-features h2 {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
 }
 
@@ -575,16 +584,16 @@ img {
 
 /* Mobile: stack columns */
 @media (max-width: 768px) {
-  .impact-image,
-  .impact-copy {
-    flex: 1 1 100%;
-    max-width: 100%;
+  .section-impact {
+    flex-direction: column-reverse; /* Show text before image */
   }
 
-  .impact-image img {
-    height: auto;
+  .impact-copy,
+  .impact-image {
+    width: 100%;
   }
 }
+
 
 .section-impact {
   display: flex;
