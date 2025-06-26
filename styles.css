@@ -253,6 +253,19 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .icons {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 1.5rem;
+  }
+
+  .icon-block {
+    flex: 0 0 auto;
+    width: 160px;
+  }
+}
 
 
 /* FEATURE CARDS */
@@ -386,7 +399,6 @@ img {
 }
 
 .section-features h2 {
-  font-size: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -514,23 +526,6 @@ img {
 }
 
 
-
-.gdpr-note {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  text-align: center;
-  font-style: italic;
-  font-size: 0.9rem;
-}
-
-.gdpr-note img {
-  width: 20px;
-  height: auto;
-}
-
 .section-impact {
   display: flex;
   flex-wrap: wrap;
@@ -625,6 +620,12 @@ img {
 
 @media (max-width: 768px) {
   h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+}
+@media (max-width: 768px) {
+  .hero-content h1 {
     font-size: 2rem;
     line-height: 1.3;
   }
