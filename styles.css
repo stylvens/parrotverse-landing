@@ -370,3 +370,26 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .section-features {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .feature-cards {
+    justify-items: center;
+  }
+
+  .feature-card img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .feature-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .feature-card p {
+    font-size: 1rem;
+  }
+}
