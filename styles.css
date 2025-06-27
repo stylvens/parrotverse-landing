@@ -637,43 +637,62 @@ img {
   padding-top: 1rem;
 }
 
-.form-overlay {
+.image-half {
+  position: relative;
+  height: 100%;
+}
+
+.image-half form {
   position: absolute;
-  bottom: 10%;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255,255,255,0.85);
   padding: 1rem;
   border-radius: 8px;
-  z-index: 10;
   display: flex;
-  flex-direction: column;
   gap: 0.5rem;
-  width: 90%;
-  max-width: 400px;
-  text-align: center;
+  z-index: 2;
 }
 
-.form-overlay form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-}
-
-.form-overlay input[type="email"] {
+.image-half input[type="email"] {
   padding: 0.5rem;
-  flex: 1 1 auto;
-  min-width: 200px;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-.form-overlay button {
-  padding: 0.5rem 1rem;
-  background-color: #32757f;
+.image-half button {
+  background: #32757f;
   color: white;
   border: none;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #16a34a;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.toast.show {
+  display: block;
+  animation: fadeout 4s forwards;
+}
+
+@keyframes fadeout {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; display: none; }
 }

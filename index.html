@@ -98,15 +98,13 @@
       </div>
     </div>
   </div>
-  <div class="half image-half">
-    <img src="public/assets/parrot-signup.png" alt="Signup" />
-    <div class="form-overlay">
-      <form method="POST" action="https://formspree.io/f/mqabwzbd">
-        <input type="email" name="email" placeholder="Your email address" required />
-        <button type="submit">Sign Up</button>
-      </form>
-    </div>
-  </div>
+  <div class="image-half">
+  <img src="your-image.jpg" alt="Sign up" />
+  <form id="signup-form" method="POST" action="https://formspree.io/f/mqabwzbd" onsubmit="return handleSubmit(event)">
+    <input type="email" name="email" placeholder="Your email address" required />
+    <button type="submit">Sign Up</button>
+  </form>
+</div>
 </section>
 
 
@@ -159,6 +157,38 @@
   });
 </script>
 
+<div id="toast" class="toast">Thanks! You’re on the list 🦜</div>
+<script>
+  function handleSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const data = new FormData(form);
+    
+    fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: { "Accept": "application/json" }
+    }).then(response => {
+      if (response.ok) {
+        showToast();
+        form.reset();
+      } else {
+        alert("Submission failed. Try again.");
+      }
+    }).catch(() => {
+      alert("An error occurred. Please try again later.");
+    });
+    return false;
+  }
+
+  function showToast() {
+    const toast = document.getElementById("toast");
+    toast.classList.add("show");
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 4000);
+  }
+</script>
 
 </body>
 </html>
