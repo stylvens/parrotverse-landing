@@ -501,16 +501,6 @@ img {
   }
 }
 
-.image-half {
-  position: relative; /* <— this is the key fix */
-  flex: 1 1 50%;
-  max-width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
 
 .gdpr-note {
   display: flex;
