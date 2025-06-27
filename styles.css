@@ -290,11 +290,21 @@ img {
   }
 }
 
-@media (min-width: 768px) {
-  .feature-cards {
-    grid-template-columns: repeat(4, 1fr);
+@media (min-width: 769px) {
+  .feature-card img {
+    width: 256px;
+    height: 256px;
+  }
+
+  .feature-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .feature-card p {
+    font-size: 1rem;
   }
 }
+
 
 /* FOOTER */
 .footer-columns {
