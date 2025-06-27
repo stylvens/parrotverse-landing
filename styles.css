@@ -269,7 +269,7 @@ img {
 
 @media (max-width: 768px) {
   .section-features h2 {
-    font-size: 2rem;
+   
     margin-bottom: 1.5rem;
   }
 
@@ -635,7 +635,7 @@ img {
 .section-care .text-inner h2 {
   position: relative;
   z-index: 1;
-  padding-top: 1rem;
+  padding-top: 2.5rem;
 }
 
 .form-overlay {
