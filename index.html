@@ -157,7 +157,7 @@
   window.addEventListener('load', () => {
     const savedY = sessionStorage.getItem('scroll-pos');
     if (savedY !== null) {
-      window.scrollTo({ top: parseInt(savedY), behavior: 'smooth' });
+      window.scrollTo({ top: parseInt(savedY), behavior: 'auto' });
       sessionStorage.removeItem('scroll-pos');
     }
   });
