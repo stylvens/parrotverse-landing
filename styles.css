@@ -450,6 +450,7 @@ img {
   width: 100%;
   height: 70vh;
   background-color: #f0c0b3;
+  overflow: hidden;
 }
 
 .half {
@@ -469,6 +470,13 @@ img {
 .text-inner {
   max-width: 500px;
   margin: auto;
+}
+
+.image-half {
+  position: relative;
+  flex: 1 1 50%;
+  max-width: 50%;
+  height: 100%;
 }
 
 .image-half img {
@@ -496,10 +504,6 @@ img {
     padding: 2rem 1rem;
   }
 
-  .image-half img {
-    height: auto;
-  }
-}
 
 .gdpr-note {
   display: flex;
@@ -656,15 +660,17 @@ img {
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(255,255,255,0.85);
+  background: rgba(255, 255, 255, 0.9);
   padding: 1rem;
   border-radius: 8px;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  z-index: 2;
+  z-index: 10;
   max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
 
 
 .image-half input[type="email"] {
