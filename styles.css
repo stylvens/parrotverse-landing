@@ -450,7 +450,6 @@ img {
   width: 100%;
   height: 70vh;
   background-color: #f0c0b3;
-  overflow: hidden;
 }
 
 .half {
@@ -470,13 +469,6 @@ img {
 .text-inner {
   max-width: 500px;
   margin: auto;
-}
-
-.image-half {
-  position: relative;
-  flex: 1 1 50%;
-  max-width: 50%;
-  height: 100%;
 }
 
 .image-half img {
@@ -504,6 +496,10 @@ img {
     padding: 2rem 1rem;
   }
 
+  .image-half img {
+    height: auto;
+  }
+}
 
 .gdpr-note {
   display: flex;
@@ -641,76 +637,43 @@ img {
   padding-top: 1rem;
 }
 
-.image-half {
-  position: relative;
-  height: 100%;
-  overflow: hidden; /* prevent overflow breaking layout */
-}
-
-.image-half img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-
-.image-half form {
+.form-overlay {
   position: absolute;
-  bottom: 2rem;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.9);
   padding: 1rem;
   border-radius: 8px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-overlay form {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  z-index: 10;
-  max-width: 90%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  justify-content: center;
 }
 
-
-
-.image-half input[type="email"] {
+.form-overlay input[type="email"] {
   padding: 0.5rem;
-  font-size: 1rem;
+  flex: 1 1 auto;
+  min-width: 200px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-.image-half button {
-  background: #32757f;
+.form-overlay button {
+  padding: 0.5rem 1rem;
+  background-color: #32757f;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.toast {
-  position: fixed;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #16a34a;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  display: none;
-  z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.toast.show {
-  display: block;
-  animation: fadeout 4s forwards;
-}
-
-@keyframes fadeout {
-  0% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { opacity: 0; display: none; }
 }
