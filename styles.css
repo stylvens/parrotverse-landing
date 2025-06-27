@@ -574,6 +574,17 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .impact-copy {
+    padding-top: 2rem;
+  }
+
+  .impact-image {
+    padding-bottom: 2rem;
+  }
+}
+
+
 
 .section-impact {
   display: flex;
