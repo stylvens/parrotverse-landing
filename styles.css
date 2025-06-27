@@ -624,61 +624,25 @@ img {
 .section-impact {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
-  color: #32757f;
-  font-size: 2.5rem;
-  /* margin-bottom: 0rem; */
-  margin-top: 2rem;
-}
-
-.impact-image,
-.impact-copy {
-  flex: 1 1 50%;
-  max-width: 50%;
-  box-sizing: border-box;
-}
-
-.impact-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Mobile: stack columns and add spacing */
-@media (max-width: 768px) {
-  .section-impact {
-    flex-direction: column-reverse;
-  }
-
-  .impact-copy,
-  .impact-image {
-    width: 100%;
-  }
-
-  .impact-copy {
-    padding-top: 2rem;
-  }
-
-  .impact-image {
-    padding-bottom: 2rem;
-  }
-}
-
-.section-impact {
-  display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   background-color: #9fbdbf;
   color: white;
   font-weight: bold;
-  padding: 4rem 2rem;
+  padding: 3rem 1.5rem;
+  gap: 2rem;
 }
 
+/* Shared layout styles */
 .impact-image,
 .impact-copy {
   flex: 1 1 50%;
   max-width: 50%;
   box-sizing: border-box;
+}
+
+.impact-image {
+  padding-bottom: 2rem;
 }
 
 .impact-image img {
@@ -692,13 +656,14 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-top: 2rem;
+  width: 100%;
 }
 
 .section-impact h2 {
-  color: #32757f; /* Use default h1/h2 colour */
+  color: #32757f;
   font-size: 2.5rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .section-impact p,
@@ -708,22 +673,43 @@ img {
   font-size: 1rem;
   font-family: 'Lato', sans-serif;
   list-style: none;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-
-/* Mobile: stack columns */
+/* Mobile: stack columns and refine spacing */
 @media (max-width: 768px) {
   .impact-image,
   .impact-copy {
     flex: 1 1 100%;
     max-width: 100%;
+    padding: 0.5rem 0;
   }
 
-  .impact-image img {
-    height: auto;
+  .impact-image {
+    padding-bottom: 1rem;
+  }
+
+  .impact-copy {
+    padding-top: 1.5rem;
+  }
+
+  .section-impact {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .section-impact h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .section-impact p,
+  .section-impact li {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
   }
 }
+
 
 @media (max-width: 768px) {
   h1 {
