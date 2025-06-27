@@ -562,19 +562,17 @@ img {
   object-fit: cover;
 }
 
-/* Mobile: stack columns */
+/* Mobile: stack columns and add spacing */
 @media (max-width: 768px) {
   .section-impact {
-    flex-direction: column-reverse; /* Show text before image */
+    flex-direction: column-reverse;
   }
 
   .impact-copy,
   .impact-image {
     width: 100%;
   }
-}
 
-@media (max-width: 768px) {
   .impact-copy {
     padding-top: 2rem;
   }
@@ -583,8 +581,6 @@ img {
     padding-bottom: 2rem;
   }
 }
-
-
 
 .section-impact {
   display: flex;
