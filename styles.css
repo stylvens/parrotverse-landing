@@ -401,7 +401,7 @@ img {
     top: auto;
     position: absolute;
   }
-
+ 
   .footer-col {
     flex: 1 1 30%;
     max-width: 33%;
@@ -413,6 +413,13 @@ img {
     color: #27575F;
   }
 }
+
+@media (max-width: 768px) {
+  .footer-banner {
+    margin-bottom: 1.5rem;
+  }
+}
+
 
 
 
@@ -686,7 +693,8 @@ img {
 .section-impact h2 {
   color: #32757f; /* Use default h1/h2 colour */
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .section-impact p,
