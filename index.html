@@ -8,6 +8,23 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="public/assets/fav.svg" type="image/svg+xml" />
 </head>
+<script>
+  // Store scroll position before the page unloads
+  window.addEventListener('beforeunload', function () {
+    sessionStorage.setItem('scrollX', window.scrollX);
+    sessionStorage.setItem('scrollY', window.scrollY);
+  });
+
+  // Restore scroll position after the page has fully loaded
+  window.addEventListener('DOMContentLoaded', function () {
+    const x = sessionStorage.getItem('scrollX');
+    const y = sessionStorage.getItem('scrollY');
+    if (x !== null && y !== null) {
+      window.scrollTo(Number(x), Number(y));
+    }
+  });
+</script>
+
 <body id="top">
   <main>
     <header class="hero">
