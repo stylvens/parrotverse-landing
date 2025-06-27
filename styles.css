@@ -319,34 +319,28 @@ img {
 
 /* FOOTER */
 .footer {
-  position: relative;
   text-align: center;
+  background-color: #32757f; /* fallback if image fails */
 }
 
-.footer-bg {
+.footer-banner img {
   width: 100%;
-  height: auto;
   display: block;
 }
 
 .footer-columns {
-  position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 2rem;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  z-index: 2;
-  box-sizing: border-box;
+  align-items: center;
   flex-wrap: wrap;
+  padding: 1.5rem 2rem;
+  color: #fff;
+  box-sizing: border-box;
 }
 
 .footer-col {
-  flex: 1 1 33%;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -356,11 +350,17 @@ img {
 .footer-col img {
   width: 28px;
   height: 28px;
-  transition: transform 0.3s ease;
 }
 
 .footer-col img:hover {
   transform: translateY(-4px);
+  transition: transform 0.3s ease;
+}
+
+.footer-text a {
+  color: #27575F;
+  text-decoration: underline;
+  font-size: 0.9rem;
 }
 
 .footer-text p {
@@ -368,63 +368,30 @@ img {
   font-size: 0.9rem;
 }
 
-.footer-text a {
-  color: #27575F; /* Matches h2 */
-  text-decoration: underline;
-  font-size: 0.9rem;
-}
-
-@media (min-width: 769px) {
-  .footer-columns {
-    align-items: flex-end;
-    padding-bottom: 2rem;
-  }
-
-  .footer-col img {
-    width: 36px;
-    height: 36px;
-  }
-}
-
-
-/* Responsive */
 @media (max-width: 768px) {
   .footer-columns {
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    position: absolute;
-    bottom: 2rem;
-    top: auto;
-    width: 100%;
+    padding: 2rem 1rem 1.5rem;
+    text-align: center;
   }
 
   .footer-col {
     flex: 0 0 33.33%;
     max-width: 33.33%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer-col:first-child {
-    align-items: flex-start;
-  }
-
-  .footer-col:last-child {
-    align-items: flex-end;
   }
 
   .footer-text p,
   .footer-text a {
     font-size: 0.75rem;
     color: #27575F;
-    text-align: center;
+  }
+
+  .footer-banner {
+    margin-bottom: 1rem;
   }
 }
+
 
 
 
