@@ -874,3 +874,21 @@ img {
     width: 140px;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .icon-block {
+    max-width: 45%;
+    flex: 1 1 45%;
+  }
+
+  .icon-block img {
+    width: 180px;
+  }
+}
+
