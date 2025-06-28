@@ -33,6 +33,9 @@
   <meta name="twitter:title" content="ParrotVerse – The Digital Home for Companion Parrots" />
   <meta name="twitter:description" content="Join 250+ parrot lovers using tools designed for parrot care, adoption, and ethical marketplaces." />
   <meta name="twitter:image" content="https://www.parrotverse.app/assets/og-image-final.png" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 </head>
 
 
@@ -188,6 +191,25 @@
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+  window.addEventListener("load", function () {
+    window.cookieconsent.initialise({
+      palette: {
+        popup: { background: "#32757f" },
+        button: { background: "#16a34a" }
+      },
+      theme: "classic",
+      position: "bottom",
+      content: {
+        message: "This website uses cookies to ensure you get the best experience.",
+        dismiss: "Got it!",
+        link: "Learn more",
+        href: "privacy.html"
+      }
+    });
+  });
+</script>
 
 
 <script src="site-scripts.js"></script>
