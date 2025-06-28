@@ -329,13 +329,17 @@ img {
 
 .footer-columns {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  gap: 1rem;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
 }
+
 
 .footer-col {
   flex: 1 1 33%;
@@ -343,6 +347,13 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.footer-col img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  max-width: 100%;
 }
 
 
