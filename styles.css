@@ -344,6 +344,7 @@ img {
   padding: 1rem 2rem;
   box-sizing: border-box;
   gap: 1rem;
+  padding: 0; /* Remove vertical padding */
 }
 
 .footer-col {
@@ -376,8 +377,24 @@ img {
   font-size: 0.9rem;
 }
 
+.footer {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+
 /* Responsive Layout */
 @media (max-width: 768px) {
+  .footer {
+    min-height: 320px;
+    padding: 0 1rem;
+  }
+
   .footer-columns {
     flex-direction: row;
     justify-content: space-between;
@@ -388,9 +405,6 @@ img {
   .footer-col {
     flex: 1 1 33%;
     max-width: 33%;
-  }
-
-  .footer-text {
     justify-content: center;
   }
 
@@ -398,12 +412,8 @@ img {
   .footer-text a {
     font-size: 0.75rem;
   }
-
-  .footer-col img {
-    width: 28px;
-    height: 28px;
-  }
 }
+
 
 
 
