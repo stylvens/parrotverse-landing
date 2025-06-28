@@ -860,6 +860,47 @@ img {
     text-align: center;
   }
 
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .icon-block {
+    max-width: 30%;
+    flex: 1 1 30%;
+  }
+
+  .icon-block img {
+    width: 180px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .icons {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .icon-block {
+    flex: 1 1 33%;
+    max-width: 33%;
+    text-align: center;
+  }
+
+  .icon-block img {
+    width: 180px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
   .icons {
     flex-direction: column;
     gap: 2rem;
@@ -875,20 +916,4 @@ img {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .icons {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-
-  .icon-block {
-    max-width: 45%;
-    flex: 1 1 45%;
-  }
-
-  .icon-block img {
-    width: 180px;
-  }
-}
 
