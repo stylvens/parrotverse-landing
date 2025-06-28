@@ -357,8 +357,34 @@ img {
 }
 
 
+/* Tablet breakpoint: stack text in center, icons at sides */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .footer-columns {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
 
-/* Responsive Layout */
+  .footer-col {
+    flex: 1 1 33%;
+    max-width: 33%;
+  }
+
+  .footer-col img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-text p,
+  .footer-text a {
+    font-size: 0.85rem;
+  }
+}
+
+
+/* Mobile: stacked layout */
 @media (max-width: 768px) {
   .footer {
     min-height: 320px;
