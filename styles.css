@@ -870,5 +870,8 @@ img {
   min-height: 250px; /* ensures image section doesn't collapse */
 }
 
+.footer-text p:not(:has(a)) {
+  text-decoration: none;
+}
 
 
