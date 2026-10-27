@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /request
+Disallow: /api/
+Disallow: /signin-with-chatgpt
+Disallow: /callback
+
+Sitemap: https://www.parrotverse.app/sitemap.xml
