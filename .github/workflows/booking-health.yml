@@ -1,0 +1,23 @@
+name: Booking availability health
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '17,47 * * * *'
+permissions:
+  contents: read
+jobs:
+  booking-health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check calendar and booking connection from the public domain
+        run: node scripts/check-public-booking.mjs --html index.html
+      - name: Check the live website during scheduled and manual checks
+        if: github.event_name != 'push'
+        run: node scripts/check-public-booking.mjs
