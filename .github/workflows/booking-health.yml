@@ -1,4 +1,4 @@
-name: Booking availability health
+name: Website health
 on:
   push:
     branches: [main]
@@ -21,3 +21,8 @@ jobs:
       - name: Check the live website during scheduled and manual checks
         if: github.event_name != 'push'
         run: node scripts/check-public-booking.mjs
+      - name: Check SEO and sharing metadata for all pages
+        run: node scripts/check-seo.mjs --directory .
+      - name: Check live SEO during scheduled and manual checks
+        if: github.event_name != 'push'
+        run: node scripts/check-seo.mjs
